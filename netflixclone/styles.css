@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;;
 }
 .heading1{
     
@@ -12,6 +16,8 @@
     padding: 10px;
 }
 .nav{
+    position: sticky;
+    top:0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,6 +43,7 @@
     background-image: url(https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-superJumbo.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 6% 10%;
     font-size: larger;
     color: white;
@@ -51,17 +58,85 @@
     background-color: rgba(0,0,0,0.1);
 }
 .sub-sec3{
-    
+   
     background-color: rgba(0,0,0,0.3);
     margin-block: 10px;
-    padding: 1%;
+    padding: 3%;
+
+}
+.sub-sec3i{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 
 }
 .tr{
     height: 150px;
     width: 120px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     padding: 0.1%;
     background-color: rgba(0,0,0,0.4);
+    margin: 2px;
 
+}
+.tr>p{
+    color: white;
+    padding: 5%;
+
+}
+.tr>img{
+    height: 80%;
+    width: 100%;
+    border: none;
+    background: linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,1.0));
+}
+.sec4{
+    background: linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,1.0));
+    
+}
+.sec4>.sec4-sub{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+.container{
+    width: 85%;
+    height: 75%;
+    background: linear-gradient(90deg,rgb(0,0,0),#e74c3c);
+    margin: auto;
+    margin-top: 7.5%;
+    padding: 2%;
+    box-shadow: 0px 0px 10px rgb(112, 107, 107);
+}
+.shoe-1:hover{
+    top:30%;
+    right:150px;
+    img{
+        height: 120%;
+        width: 120%;
+    }
+    
+
+}
+.left{
+    width:50%;
+    color: white;
+    padding: 5%;
+}
+.shoe-1{
+    position: absolute;
+    top:20%;
+    right:10%;
+    height: 300px;
+    width: 300px;
+    
+}
+.shoe-1>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px rgb(255,255,255);
 }
