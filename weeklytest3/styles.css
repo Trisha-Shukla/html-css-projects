@@ -23,7 +23,7 @@ body{
     justify-content: center;
     background-color: black;
     color: white;
-    flex-wrap: wrap;
+    
 }
 .nav-sub{
     padding: 20px;
