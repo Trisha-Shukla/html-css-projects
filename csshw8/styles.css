@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgb(232, 232, 248);
+    font-weight: 400;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.testimonial-grid{
+    display:grid;
+    width:min(95%, 70rem);
+    gap:1.5rem;
+    grid-auto-columns: 1fr;
+    padding-block: 2rem;
+    margin-inline:auto ;
+    grid-template-areas: "one one teo five" "three four four five";
+    /* color: white; */
+}
+.bg-primary-400{
+    background: rgb(162, 12, 231);
+    
+}
+.bg-secondary-400{
+    background: rgb(61, 60, 60);
+}
+.testimonial.quote{
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+.testimonial:nth-child(1){
+    grid-area: one;
+    
+}
+.testimonial{
+    padding: 2rem;
+    font-size: 500;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgba(0,0,0,0.0.3);
+   
+}
+.text-neutral-100{
+    color: white;
+}
+.testimonial:nth-child(3){
+    grid-area: three;
+}
+.testimonial:nth-child(4){
+    grid-area: four;
+}
+.testimonial:nth-child(5){
+    grid-area: five;
+}
+.text-secondary-400{
+    color: black;
+}
+.bg-neutral-100{
+    background: white;
+}
+.bg-secondary-500{
+     background: rgb(39, 36, 51);
+}
+
+.flex{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+
+}
+.flex>div>img{
+    width:1.75rem;
+    border-radius:50% ;
+    
+    
+}
+.name{
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.position{
+    font-size: .75rem;
+    opacity:0.5;
+}
+.p1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.p2{
+    opacity: 0.7;
+    font-size: .85rem;
+}
